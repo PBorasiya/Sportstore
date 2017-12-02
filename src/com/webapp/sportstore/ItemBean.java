@@ -10,6 +10,7 @@ public class ItemBean implements Serializable {
 	private String productDisc;
 	private String imagePath;
 	private double totalCost;
+	
 
 	public ItemBean() {
 		

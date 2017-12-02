@@ -28,7 +28,7 @@
     footer {
       background-color: #555;
       color: white;
-      padding: 15px;
+      padding: 25px;
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -55,9 +55,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="home">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="ShoppingCart.jsp">Cart</a></li>
+        
       </ul>
       
     </div>
@@ -95,7 +94,7 @@
       <div>
         <h2><p id="total"></p></h2>
       </div>
-      <div><a class="btn btn-primary btn-block"  href="cart" value="add" value="ADD" name="action">CHECKOUT</a></div>
+      <div><a class="btn btn-primary btn-block"  href="selectAccount.jsp"  value="add" value="ADD" name="action">CHECKOUT</a></div>
     </div>
     
   </div>
@@ -103,7 +102,6 @@
 
 
    <script type="text/javascript">
-   
    
 
    if (typeof(Storage) !== "undefined") {
@@ -170,6 +168,7 @@
        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
    }
 
+   
 </script>
 <footer class="container-fluid text-center">
   <p>Online SportStore Copyright</p>  

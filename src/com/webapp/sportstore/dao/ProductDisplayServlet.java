@@ -43,7 +43,7 @@ public class ProductDisplayServlet extends HttpServlet {
 	   //  Database credentials
 		final String USER = "root";
 		final String PASS = "";
-	   
+		 String qry = "SELECT * from itemtable where ProductID = " + itemID;
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		String myString = null;
@@ -56,8 +56,10 @@ public class ProductDisplayServlet extends HttpServlet {
 		      conn = DriverManager.getConnection(DB_URL,USER,PASS);
 		      System.out.println("database connected");
 		      System.out.println("Creating statement...");
-		      stmt = conn.prepareStatement("SELECT * from itemtable where ProductID = " + itemID );
-		      ResultSet rs = stmt.executeQuery();
+		      PreparedStatement preparedStatement = conn.prepareStatement(qry);
+		      ResultSet rs = preparedStatement.executeQuery();
+		      //stmt = conn.prepareStatement("SELECT * from itemtable where ProductID = " + itemID );
+		      //ResultSet rs = stmt.executeQuery();
 		      
 		   /*   while(rs.next()){
 		    	  System.out.println(rs);

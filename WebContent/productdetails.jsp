@@ -65,10 +65,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="home">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">Stores</a></li>
-        <li><a href="#">Contact</a></li>
+        
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
@@ -107,7 +104,7 @@
       
       <br/>
       <br/>
-       <a  href='cart' id='checkout' class="btn btn-warning btn-block">Checkout</a>
+       <a  href='ShoppingCart.jsp' id='checkout' class="btn btn-warning btn-block">Checkout</a>
        
        <a href='home' id='cntshopping' class="btn btn-success btn-block">Continue Shopping</a>
   
